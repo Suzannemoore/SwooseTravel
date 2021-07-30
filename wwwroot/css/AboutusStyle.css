@@ -1,0 +1,204 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    font-size: 61.3%;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 7.8rem;
+    font-family: 'Style Script', cursive;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: normal;
+    list-style: none;
+}
+
+h4 {
+    font-size: 5.0rem;
+    font-family: 'Style Script', cursive;
+}
+
+h5 {
+    font-size: 2.8rem;
+}
+
+h6 {
+    font-size: 1.8rem;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+   
+}
+
+    a, a:visited {
+        color: #90c7c1;
+        text-decoration: none;
+    }
+
+.nav-item {
+    color: white;
+}
+
+nav {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 2rem;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+    nav ul {
+        display: flex;
+        flex: 1 1 40rem;
+        justify-content: space-around;
+        align-items: center;
+        list-style: none;
+    }
+
+#logo {
+    flex: 2 1 40rem;
+    font-size: 3.9rem;
+    font-family: 'Style Script', cursive;
+    font-weight: 400;
+}
+
+
+#aboutUsInfo {
+    min-height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.85), transparent), url("../img/friendvac.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+.aboutUsInfo-head {
+    width: 90%;
+    margin: auto;
+}
+
+
+#userQuestions {
+    min-height: 50vh;
+    background: white;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    color: black;
+    padding: 2rem;
+    font-family: brandon-grotesque;
+    text-align: center;
+    color: #333;
+    list-style: none;
+}
+
+.userQuestions-head {
+    width: 90%;
+    margin: auto;
+}
+
+.userQuestions img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+
+#locationInfo {
+    min-height: 68vh;
+    background-image: url("../img/NewOrleans2.jpg");
+    background-repeat: no-repeat;
+    background-size: 92vh;
+    background-position: center;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.locationInfo-head {
+    width: 40%;
+    margin: auto;
+}
+
+
+
+/*layout form media*/
+@media screen and (max-width: 932px) {
+    html {
+        font-size: 30%;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    #Logo {
+        padding: 1rem;
+    }
+}
+
+
+footer {
+    color: white;
+    background: rgba(19, 28, 39, 1);
+    font-family: 'Style Script', cursive;
+    font-weight: 400;
+}
+
+.footer-wrapper {
+    display: flex;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    min-height: 15vh;
+    flex-wrap: wrap;
+}
+
+footer h5 {
+    flex: 1 1 20rem;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 20rem;
+    justify-content: space-between;
+    align-items: center;
+}
