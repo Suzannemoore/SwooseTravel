@@ -1,0 +1,145 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>@ViewData["Title"] Swoose Travel Company | Travel Company </title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+        <title> Swoose Travel Company | Travel Company </title>
+        <link rel="stylesheet" href="~/css/site.css" />
+</head>
+    <body>
+
+        <main>
+            <section class="travel-intro">
+                <h2>The Swoose Travel Company</h2>
+                <br /><h4>We Connect People and Places</h4><br />
+                <h5>
+                    Traveling is about more than flights and hotel reservations. <br />
+                    It’s about connecting. Our mission is to help you plan your perfect vaction.  <br />
+                    See why hundered of travelers are using Swoose Travel as a way to book vactions. <br /> <br /><br />
+                </h5>
+
+                <form method="get" action="/Contact">
+                    <button type="submit">Contact Us</button>
+                </form>
+            </section>
+            <section id="familyVactions">
+                <header class="familyVactions-head">
+                    <h2>Family Vacation Planning Made Easy.</h2>
+                    <h3>
+                        <br /> Create memories that last long after your suntans fade.
+                    </h3>
+                </header>
+            </section>
+            <section id="howItWorks">
+                <header class="howItWorks-head">
+                    <h2>How we make planning your vacation easier..</h2>
+                    <h3>
+                        <br /> Get started today!
+                    </h3>
+                </header>
+                <div class="cards">
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="/icons/email.svg" alt="" />
+                        </div>
+                        <h4>Speak With An Agent</h4>
+                        <p>
+                            Contact an agent today to answer quick questions so we can plan a personalized vacation just for you.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="/icons/money.svg" alt="" />
+                        </div>
+                        <h4>Discuss Your Budget</h4>
+                        <p>
+                            Let us know  much you want to spend on your travel and we will get you the best price!
+                        </p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">
+                            <img src="./icons/travel.svg" alt="" />
+                        </div>
+                        <h4>Enjoy Your Vaction</h4>
+                        <p>
+                            All you need to do is Pack Up and enjoy your personailized vaction.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <div class="form-wrapper">
+                    <header class="form-head">
+                        <h2>Contact Us</h2>
+                    </header>
+                    <form action="https://formspree.io/mzbbyqbo" method="POST">
+                        <div class="name-form">
+                            <label for="name">Name:</label>
+                            <input id="name" type="text" name="name" required minlength="4" />
+                        </div>
+                        <div class="email-form">
+                            <label for="email">Email:</label>
+                            <input id="email" type="email" required name="_replyto" />
+                        </div>
+                        <div class="message-form">
+                            <label for="subject"></label>
+                            <textarea id="subject" name="subject" placeholder="Write Your Message Here.." style="height:200px"></textarea>
+                        </div>
+                        <button value="Send" type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+
+
+
+            <footer>
+                <div class="footer-wrapper">
+                    <h5>Swoose Travel Company &copy;</h5>
+                    <ul>
+                        <li>
+                            <a href="https://twitter.com/?lang=en" title="twitter-social-media">
+                                <img src="./icons/twitter.svg" alt="twitter-social-media" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/" title="youtube-social-media">
+                                <img src="./icons/youtube.svg" alt="youtube-social-media" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/" title="instagram-social-media">
+                                <img src="./icons/instagram.svg" alt="instagram-social-media" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+        </main>
+
+        @*Resize*@
+        <style>
+
+            .body-container {
+                /*remove the container default padding attribute*/
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                /*increase width as per your need*/
+                max-width: 100%;
+            }
+        </style>
+
+
+    </body>
+</html>
